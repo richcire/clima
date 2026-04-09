@@ -28,6 +28,7 @@ struct WeatherManager {
     func handle(data: Data?, response: URLResponse?, error: Error?) {
         if let error = error {
             print(error)
+            print(error.localizedDescription)
             return
         }
         
